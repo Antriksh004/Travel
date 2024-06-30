@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, red 10%, blanchedalmond 0%);
+
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+section {
+    flex: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.contact-agency, .our-contacts {
+    text-align: left;
+}
+
+.any-questions {
+    text-align: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer img {
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
+    section {
+        margin: 0 5px;
+    }
+
+    .contact-agency p, .our-contacts address {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 0.9em;
+    }
+
+    section {
+        margin: 0 5px;
+    }
+
+    .contact-agency p, .our-contacts address {
+        font-size: 0.8em;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 0.8em;
+    }
+
+    section {
+        margin: 0 2px;
+    }
+
+    .contact-agency p, .our-contacts address {
+        font-size: 0.7em;
+    }
+
+    form input, form textarea {
+        padding: 6px;
+        margin: 6px 0;
+    }
+
+    form button {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-left: 13%;
+        flex-direction: column;
+    }
+}

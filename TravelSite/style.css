@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(to right, blanchedalmond 70%, red 30%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.query {
+    display: flex;
+    align-items: center;
+}
+
+.query nav a {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.mainBlock {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.homeBox {
+    flex: 1;
+    padding-left: 50px;
+    color: black;
+}
+
+.firstLine {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.secondLine {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.secondLine span {
+    color: red;
+}
+
+.thirdLine {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.imageBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.imageBox img {
+
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
