@@ -1,16 +1,21 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, red 10%, blanchedalmond 0%);
 
     color: #000;
+    display: flex;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.container1 {
+    flex: 2;
+    background-color: red;
+
+}
+.container2 {
+    flex: 8;
+    margin: 0 2;
+    padding: 2px;
+    background-color: blanchedalmond;
 }
 
 header {
@@ -29,7 +34,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
+    color: black;
     font-weight: bold;
 }
 
@@ -58,7 +63,7 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid grey;
     border-radius: 5px;
 }
 
@@ -66,23 +71,23 @@ form button {
     padding: 10px 20px;
     border: none;
     background-color: #000;
-    color: #fff;
+    color: cyan;
     border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #333;
+    background-color: grey;
 }
 
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 footer img {
-    width: auto;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 @media (max-width: 1024px) {
@@ -133,21 +138,13 @@ footer img {
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
+    .container1{
+        min-width: 20%;
     }
-
-    nav a {
-        margin: 0 5px;
-        font-size: 0.8em;
-    }
+    
 
     section {
-        margin: 0 2px;
-    }
-
-    .contact-agency p, .our-contacts address {
-        font-size: 0.7em;
+        margin: 0 0px;
     }
 
     form input, form textarea {
@@ -157,12 +154,5 @@ footer img {
 
     form button {
         padding: 6px 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        padding-left: 13%;
-        flex-direction: column;
     }
 }
